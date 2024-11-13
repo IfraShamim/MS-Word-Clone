@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Word</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8a9ff872a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="head">
+      MS WORD <br />
+      <p>By &lt;Ifra Shamim/&gt;</p>
+    </div>
+    <div id="btns">
+      <p>
+        <span id="bold">B</span><span id="italic"><i>I</i></span
+        ><span id="underline"><u>U</u></span>
+      </p>
+      <p>
+        <select id="fontSelect" onchange="fontFamily(value)">
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="'Times New Roman', serif">Times New Roman</option>
+          <option value="'Courier New', monospace">Courier New</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="Georgia, serif">Georgia</option>
+        </select>
+      </p>
+      <p id="size">
+        <span id="large"><b>A</b></span
+        ><span id="small"
+          ><b><small>A</small></b></span
+        >
+      </p>
+      <p>
+        <select id="case" onchange="fontCase(value)">
+          <option value="UPPERCASE">UPPERCASE</option>
+          <option value="lowercase">lowercase</option>
+          <option value="Capitalize">Capitalize</option>
+        </select>
+      </p>
+      <p id="color">
+        <span>
+          <input type="color" id="color1" onchange="fontColor(value)"
+        /> Font Color</span>
+      </p>
+      <p id="clear"><span>Clear</span></p>
+      <p id="length"><span>Count Letter</span></p>
+      <p id="word"><span>Count Word</span></p>
+      <p id="align">
+        <span id="left"><i class="fa-solid fa-align-left"></i></span>
+        <span id="center"><i class="fa-solid fa-align-center"></i></span>
+        <span id="justify"><i class="fa-solid fa-align-justify"></i></span>
+        <span id="right"><i class="fa-solid fa-align-right"></i></span>
+      </p>
+      <p id="countt"><span id="count">Vowel & Consonant Count</span></p>
+      <p id="highlight">
+        <span>
+          <input type="color" id="highlighter" onchange="highlighter(value)"
+        /> Page Color</span>
+      </p>
+    </div>
+    <div id="text">
+      <textarea name="" id="textarea"></textarea>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

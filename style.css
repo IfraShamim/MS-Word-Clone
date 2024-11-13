@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body, html {
+    height: 100%;  
+    width: 100%;
+}
+
+#head {
+    width: 100%;
+    background-color: #003459;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+#head p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#btns {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+#btns p {
+    background-color: #fff;
+    padding: 0.5rem;
+    width: auto;
+    height: max-content;
+}
+
+#btns p span {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btns p span:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+textarea {
+    width: 100%;
+    height: calc(100vh - 238px); 
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box; 
+    padding: 1rem;
+    resize: none; 
+    overflow: auto; 
+}
+
+#btns select {
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+#color1, #highlighter {
+    border: none;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #head {
+        font-size: 2.5rem; 
+    }
+    
+    #btns {
+        padding: 1rem;
+    }
+    
+    #btns p {
+        padding: 0.3rem;
+    }
+
+    #btns p span {
+        padding: 0.5rem;
+    }
+    
+    textarea {
+        height: calc(100vh - 150px); 
+    }
+}
+
+@media (max-width: 480px) {
+    #head {
+        font-size: 2rem;
+    }
+
+    #btns {
+        gap: 0.5rem;
+    }
+
+    #btns p {
+        padding: 0.5rem;
+    }
+
+    #btns p span {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+    
+    textarea {
+        height: calc(100vh - 120px); 
+    }
+}
